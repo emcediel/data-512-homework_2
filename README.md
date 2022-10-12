@@ -3,6 +3,7 @@
 Our goal is to analyze explore the concept of bias by using english Wikipedia articles. We will analyze politicians from different countries. 
 
 ## <u>Files inside repo</u>
+
 ## Source files
 
 1. <em>politicians_by_country_SEPT.2022.csv.xlsx</em>: The Wikipedia [Category:Politicians](https://en.wikipedia.org/wiki/Category:Politicians_by_nationality) by nationality was crawled to generate a list of Wikipedia article pages about politicians from a wide range of countries
@@ -42,17 +43,17 @@ article_quality: 1 if article is considered high quality (featured article or go
 
 ## <u>Data limitations and special considerations </u>
 
-The initial crawiling results had multiple duplicates for politicians. Duplicate politicians acting for the same country were deleted. 
+1. The initial crawiling results had multiple duplicates for politicians. Duplicate politicians acting for the same country were deleted. 
 
-6 articles did not have revision_ID information from the API, these politicians were removed form the analysis
+2. 6 articles did not have revision_ID information from the API, these politicians were removed form the analysis
 
-Countries with english as a primary language are not considered in the analysis in order to make a fair comparison
+3. Countries with english as a primary language are not considered in the analysis in order to make a fair comparison
 
-There are articles under the country Korea, given that this didn't exist in the populations table, we decided to remove these articles from the analysis.
+4. There are articles under the country Korea, given that this didn't exist in the populations table, we decided to remove these articles from the analysis.
 
-There are countries whose poulation is <0.0 million, given that our comparison metrics are "per capita" we decide to remove articles from countries that have such small poulations.
+5. There are countries whose poulation is <0.0 million, given that our comparison metrics are "per capita" we decide to remove articles from countries that have such small poulations.
 
-When obtaining data from the API remeber that Global Rules limit your clients to no more than 200 requests/s to this API. Each API endpoint's documentation may detail more specific usage limits. Set a unique User-Agent or Api-User-Agent header that allows us to contact you quickly. Email addresses or URLs of contact pages work well. We recommend using delays when requesting data to comply with these terms.
+6. When obtaining data from the API remeber that Global Rules limit your clients to no more than 200 requests/s to this API. Each API endpoint's documentation may detail more specific usage limits. Set a unique User-Agent or Api-User-Agent header that allows us to contact you quickly. Email addresses or URLs of contact pages work well. We recommend using delays when requesting data to comply with these terms.
 
 
 
